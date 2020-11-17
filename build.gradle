@@ -11,9 +11,9 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.0"
-group = "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "0.1-build1"
+group = "cc.sukazyo.entityalchemy" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "entity_alchemy"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -34,6 +34,8 @@ minecraft {
 }
 
 dependencies {
+    implementation 'org.jetbrains:annotations:15.0'
+    
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
