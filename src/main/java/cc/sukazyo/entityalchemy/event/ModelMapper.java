@@ -1,8 +1,8 @@
 package cc.sukazyo.entityalchemy.event;
 
 import cc.sukazyo.entityalchemy.EntityAlchemy;
-import cc.sukazyo.entityalchemy.item.EntityAlchemyItems;
-import cc.sukazyo.entityalchemy.item.ItemMaterials;
+import cc.sukazyo.entityalchemy.gameobj.item.EntityAlchemyItems;
+import cc.sukazyo.entityalchemy.gameobj.item.ItemMaterials;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -18,11 +18,11 @@ public final class ModelMapper {
 	@SubscribeEvent
 	public static void onModelReg(ModelRegistryEvent event) {
 		
-		ModelLoader.setCustomModelResourceLocation(EntityAlchemyItems.extractor, 0, new ModelResourceLocation(Objects.requireNonNull(EntityAlchemyItems.extractor.getRegistryName()), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(EntityAlchemyItems.EXTRACTOR, 0, new ModelResourceLocation(Objects.requireNonNull(EntityAlchemyItems.EXTRACTOR.getRegistryName()), "inventory"));
 		
 		for (int i = 0; i < ItemMaterials.subtypes.length && i < 3; i++) {
 			ModelLoader.setCustomModelResourceLocation(
-					EntityAlchemyItems.materials,
+					EntityAlchemyItems.MATERIALS,
 					i,
 					new ModelResourceLocation(
 							EntityAlchemy.MODID + ":" + ItemMaterials.subtypes[i],

@@ -1,6 +1,7 @@
-package cc.sukazyo.entityalchemy.other;
+package cc.sukazyo.entityalchemy.gameobj.other;
 
-import cc.sukazyo.entityalchemy.item.EntityAlchemyItems;
+import cc.sukazyo.entityalchemy.gameobj.item.EntityAlchemyItems;
+import cc.sukazyo.entityalchemy.gameobj.item.ItemMaterials;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
@@ -13,7 +14,7 @@ public class EACreativeTabs extends CreativeTabs {
 	@Override
 	@SuppressWarnings("all")
 	public ItemStack createIcon() {
-		return new ItemStack(EntityAlchemyItems.materials, 1, 5);
+		return new ItemStack(EntityAlchemyItems.MATERIALS, 1, ItemMaterials.MEATBALL);
 	}
 	
 }
