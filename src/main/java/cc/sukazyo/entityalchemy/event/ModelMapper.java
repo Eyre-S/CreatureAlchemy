@@ -2,8 +2,9 @@ package cc.sukazyo.entityalchemy.event;
 
 import cc.sukazyo.entityalchemy.EntityAlchemy;
 import cc.sukazyo.entityalchemy.gameobj.item.EntityAlchemyItems;
-import cc.sukazyo.entityalchemy.gameobj.item.ItemMaterials;
+import cc.sukazyo.entityalchemy.struct.IMetasItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
@@ -18,17 +19,24 @@ public final class ModelMapper {
 	@SubscribeEvent
 	public static void onModelReg(ModelRegistryEvent event) {
 		
-		ModelLoader.setCustomModelResourceLocation(EntityAlchemyItems.EXTRACTOR, 0, new ModelResourceLocation(Objects.requireNonNull(EntityAlchemyItems.EXTRACTOR.getRegistryName()), "inventory"));
+		registerItemWithMetaModel(event, EntityAlchemyItems.MATERIALS);
+		registerItemModel(event, EntityAlchemyItems.EXTRACTOR);
 		
-		for (int i = 0; i < ItemMaterials.subtypes.length && i < 3; i++) {
+	}
+	
+	public static void registerItemModel (ModelRegistryEvent event, Item item) {
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Objects.requireNonNull(item.getRegistryName()), "inventory"));
+	}
+	
+	public static <T extends Item & IMetasItem> void registerItemWithMetaModel (ModelRegistryEvent event, T item) {
+		for (int i = 0; i < item.getSubtypeIDs().length; i++) {
 			ModelLoader.setCustomModelResourceLocation(
-					EntityAlchemyItems.MATERIALS,
+					item,
 					i,
 					new ModelResourceLocation(
-							EntityAlchemy.MODID + ":" + ItemMaterials.subtypes[i],
+							EntityAlchemy.MODID + ":" + item.getSubtypeIDs()[i],
 							"inventory"));
 		}
-		
 	}
 	
 }

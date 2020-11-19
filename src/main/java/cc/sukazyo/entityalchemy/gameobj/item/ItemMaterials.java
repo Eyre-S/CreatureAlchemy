@@ -2,27 +2,30 @@ package cc.sukazyo.entityalchemy.gameobj.item;
 
 import cc.sukazyo.entityalchemy.EntityAlchemy;
 import cc.sukazyo.entityalchemy.event.EventGameObjectRegister;
+import cc.sukazyo.entityalchemy.struct.IMetasItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class ItemMaterials extends Item {
+public class ItemMaterials extends Item implements IMetasItem {
+	
+	public static final String ID = "materials";
 	
 	public static final String[] subtypes = new String[] {
-			"component",
-			"unit",
+			"precision_component",
+			"precision_unit",
 			"pebble",
-			"light_crystal",
-			"mystery_cotton",
+			"flash_crystal",
+			"mysterious_cotton",
 			"meatball",
 			"crystal"
 	};
-	public static final int COMPONENT = 0;
-	public static final int UNIT = 1;
+	public static final int PRECISION_COMPONENT = 0;
+	public static final int PRECISION_UNIT = 1;
 	public static final int PEBBLE = 2;
-	public static final int LIGHT_CRYSTAL = 3;
-	public static final int MYSTERY_COTTON = 4;
+	public static final int FLASH_CRYSTAL = 3;
+	public static final int MYSTERIOUS_COTTON = 4;
 	public static final int MEATBALL = 5;
 	public static final int CRYSTAL = 6;
 	
@@ -32,7 +35,7 @@ public class ItemMaterials extends Item {
 		setMaxDamage(0);
 		setNoRepair();
 		
-		setRegistryName(EntityAlchemy.MODID, "materials");
+		setRegistryName(EntityAlchemy.MODID, ID);
 		setCreativeTab(EventGameObjectRegister.itemTab);
 		
 	}
@@ -42,9 +45,14 @@ public class ItemMaterials extends Item {
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> list) {
 		if (this.isInCreativeTab(tab)) {
 			for (int i = 0; i < subtypes.length; i++) {
-				list.add(new ItemStack(EntityAlchemyItems.MATERIALS, 1, i));
+				list.add(new ItemStack(this, 1, i));
 			}
 		}
+	}
+	
+	@Override
+	public String[] getSubtypeIDs () {
+		return subtypes;
 	}
 	
 	@Override
