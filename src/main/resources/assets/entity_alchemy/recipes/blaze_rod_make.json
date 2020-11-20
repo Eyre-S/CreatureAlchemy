@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "entity_alchemy:blaze_rod_make",
+	"pattern": [
+		"` ",
+		"` ",
+		"`#"
+	],
+	"key": {
+		"`": {
+			"item": "minecraft:blaze_powder"
+		},
+		"#": {
+			"item": "minecraft:obsidian"
+		}
+	},
+	"result": {
+		"item": "minecraft:blaze_rod"
+	}
+}
