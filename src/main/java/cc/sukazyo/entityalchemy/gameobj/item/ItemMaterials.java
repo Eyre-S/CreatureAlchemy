@@ -18,7 +18,6 @@ public class ItemMaterials extends Item implements IMetasItem {
 			"pebble",
 			"flash_crystal",
 			"mysterious_cotton",
-			"meatball",
 			"crystal"
 	};
 	public static final int PRECISION_COMPONENT = 0;
@@ -26,8 +25,7 @@ public class ItemMaterials extends Item implements IMetasItem {
 	public static final int PEBBLE = 2;
 	public static final int FLASH_CRYSTAL = 3;
 	public static final int MYSTERIOUS_COTTON = 4;
-	public static final int MEATBALL = 5;
-	public static final int CRYSTAL = 6;
+	public static final int CRYSTAL = 5;
 	
 	public ItemMaterials () {
 		

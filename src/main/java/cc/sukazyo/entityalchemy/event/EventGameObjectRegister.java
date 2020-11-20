@@ -20,6 +20,7 @@ public class EventGameObjectRegister {
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(
 				EntityAlchemyItems.MATERIALS,
+				EntityAlchemyItems.MEATBALL,
 				EntityAlchemyItems.EXTRACTOR
 		);
 		registerItemsOreDictionary(event);

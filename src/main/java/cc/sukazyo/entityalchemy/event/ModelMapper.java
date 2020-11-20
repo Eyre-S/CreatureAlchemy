@@ -20,6 +20,7 @@ public final class ModelMapper {
 	public static void onModelReg(ModelRegistryEvent event) {
 		
 		registerItemWithMetaModel(event, EntityAlchemyItems.MATERIALS);
+		registerItemModel(event, EntityAlchemyItems.MEATBALL);
 		registerItemModel(event, EntityAlchemyItems.EXTRACTOR);
 		
 	}

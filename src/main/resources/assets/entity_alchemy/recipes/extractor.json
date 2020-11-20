@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "entity_alchemy:flash_crystal",
+	"pattern": [
+		"#@#",
+		"#^#",
+		" | "
+	],
+	"key": {
+		"|": {
+			"item": "minecraft:stick"
+		},
+		"#": {
+			"item": "minecraft:planks",
+			"data": 32767
+		},
+		"@": {
+			"item": "entity_alchemy:materials",
+			"data": 1
+		},
+		"^": {
+			"item": "entity_alchemy:materials",
+			"data": 0
+		}
+	},
+	"result": {
+		"item": "entity_alchemy:extractor"
+	}
+	
+}

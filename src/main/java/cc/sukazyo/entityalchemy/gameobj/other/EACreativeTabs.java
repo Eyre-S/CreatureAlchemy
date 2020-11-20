@@ -14,7 +14,7 @@ public class EACreativeTabs extends CreativeTabs {
 	@Override
 	@SuppressWarnings("all")
 	public ItemStack createIcon() {
-		return new ItemStack(EntityAlchemyItems.MATERIALS, 1, ItemMaterials.MEATBALL);
+		return new ItemStack(EntityAlchemyItems.MEATBALL);
 	}
 	
 }
