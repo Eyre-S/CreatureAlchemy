@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "0.1"
-group = "cc.sukazyo.entityalchemy" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "entity_alchemy"
+group = "cc.sukazyo.creaturealchemy" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "creature_alchemy"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -75,5 +75,12 @@ processResources {
     // copy everything else except the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
+    }
+}
+
+// IDEA Runs Support
+sourceSets {
+    main {
+        output.resourcesDir = output.classesDir
     }
 }

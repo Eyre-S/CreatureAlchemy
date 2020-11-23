@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "creature_alchemy:flash_crystal",
+	"pattern": [
+		"&%&",
+		"%O%",
+		"&%&"
+	],
+	"key": {
+		"&": {
+			"item": "minecraft:redstone"
+		},
+		"%": {
+			"item": "minecraft:glowstone_dust"
+		},
+		"O": {
+			"item": "creature_alchemy:materials",
+			"data": 5
+		}
+	},
+	"result": {
+		"item": "creature_alchemy:materials",
+		"data": 3
+	}
+}

@@ -1,0 +1,12 @@
+itemGroup.creature_alchemy=生灵炼金术
+
+item.creature_alchemy.precision_component.name=精密零件
+item.creature_alchemy.precision_unit.name=精密组件
+item.creature_alchemy.pebble.name=小石子
+item.creature_alchemy.flash_crystal.name=光晶体
+item.creature_alchemy.mysterious_cotton.name=神秘棉
+item.creature_alchemy.crystal.name=水晶
+
+item.creature_alchemy.meatball.name=肉团
+
+item.creature_alchemy.extractor.name=解构器

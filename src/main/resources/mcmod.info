@@ -1,14 +1,14 @@
 [
 {
-  "modid": "entity_alchemy",
-  "name": "Entity Alchemy",
+  "modid": "creature_alchemy",
+  "name": "Creature Alchemy",
   "description": "A mod to use some method to produce non-peaceful resource.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://sukazyo.cc/projects/entity-alchemy",
+  "url": "https://sukazyo.cc/projects/creature-alchemy",
   "updateUrl": "",
   "authorList": ["Cookie Sukazyo Eyre"],
-  "credits": "Timicasto",
+  "credits": "Timicasto and all of the member's of Pd2",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

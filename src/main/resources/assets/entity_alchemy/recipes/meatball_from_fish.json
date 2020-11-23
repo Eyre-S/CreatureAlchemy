@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:crafting_shapeless",
-	"group": "entity_alchemy:meatball_from_fish",
-	"result": { "item": "entity_alchemy:meatball", "count": 2 },
-	"ingredients": [
-		{ "item": "minecraft:fish", "data": 0 }
-	]
-}

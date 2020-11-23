@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "creature_alchemy:meatball_from_porkchop",
+	"result": { "item": "creature_alchemy:meatball", "count": 3 },
+	"ingredients": [
+		{ "item": "minecraft:porkchop" }
+	]
+}

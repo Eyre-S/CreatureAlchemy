@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "creature_alchemy:crystal",
+	"result": { "item": "creature_alchemy:materials", "data": 5 },
+	"ingredients": [
+		{ "item": "minecraft:diamond" },
+		{ "item": "minecraft:emerald" }
+	]
+}
