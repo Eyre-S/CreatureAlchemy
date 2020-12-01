@@ -77,10 +77,3 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-
-// IDEA Runs Support
-sourceSets {
-    main {
-        output.resourcesDir = output.classesDir
-    }
-}
