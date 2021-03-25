@@ -2,7 +2,6 @@ package cc.sukazyo.creaturealchemy.event;
 
 import cc.sukazyo.creaturealchemy.CreatureAlchemy;
 import cc.sukazyo.creaturealchemy.gameobj.item.CreatureAlchemyItems;
-import cc.sukazyo.creaturealchemy.gameobj.item.ItemMaterials;
 import cc.sukazyo.creaturealchemy.gameobj.other.CACreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,15 +18,24 @@ public class EventGameObjectRegister {
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(
-				CreatureAlchemyItems.MATERIALS,
 				CreatureAlchemyItems.MEATBALL,
-				CreatureAlchemyItems.EXTRACTOR
+				CreatureAlchemyItems.EXTRACTOR,
+				CreatureAlchemyItems.PRECISION_COMPONENT,
+				CreatureAlchemyItems.PRECISION_UNIT,
+				CreatureAlchemyItems.PEBBLE,
+				CreatureAlchemyItems.FLASH_CRYSTAL,
+				CreatureAlchemyItems.MYSTERIOUS_COTTON,
+				CreatureAlchemyItems.CRYSTAL,
+				CreatureAlchemyItems.PEARL,
+				CreatureAlchemyItems.PEARL_FRAGMENT,
+				CreatureAlchemyItems.TIDE_GRANULE,
+				CreatureAlchemyItems.TIDE_SLURRY
 		);
-		registerItemsOreDictionary(event);
+		registerItemsOreDictionary();
 	}
 	
-	public static void registerItemsOreDictionary (RegistryEvent.Register<Item> event) {
-		OreDictionary.registerOre("pebble", new ItemStack(CreatureAlchemyItems.MATERIALS, 1, ItemMaterials.PEBBLE));
+	public static void registerItemsOreDictionary () {
+		OreDictionary.registerOre("pebble", new ItemStack(CreatureAlchemyItems.PEBBLE, 1));
 	}
 	
 }

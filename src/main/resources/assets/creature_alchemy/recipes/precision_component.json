@@ -13,7 +13,6 @@
 		}
 	},
 	"result": {
-		"item": "creature_alchemy:materials",
-		"data": 0
+		"item": "creature_alchemy:precision_component"
 	}
 }

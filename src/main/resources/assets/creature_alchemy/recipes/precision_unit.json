@@ -16,12 +16,10 @@
 			"item": "minecraft:heavy_weighted_pressure_plate"
 		},
 		"^": {
-			"item": "creature_alchemy:materials",
-			"data": 0
+			"item": "creature_alchemy:precision_component"
 		}
 	},
 	"result": {
-		"item": "creature_alchemy:materials",
-		"data": 1
+		"item": "creature_alchemy:precision_unit"
 	}
 }

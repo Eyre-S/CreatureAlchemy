@@ -15,12 +15,10 @@
 			"data": 32767
 		},
 		"@": {
-			"item": "creature_alchemy:materials",
-			"data": 1
+			"item": "creature_alchemy:precision_unit"
 		},
 		"^": {
-			"item": "creature_alchemy:materials",
-			"data": 0
+			"item": "creature_alchemy:precision_component"
 		}
 	},
 	"result": {

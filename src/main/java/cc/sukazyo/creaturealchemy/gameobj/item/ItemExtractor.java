@@ -7,7 +7,8 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraftforge.common.util.EnumHelper;
-import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nonnull;
 
 public class ItemExtractor extends ItemTool {
 	
@@ -23,7 +24,7 @@ public class ItemExtractor extends ItemTool {
 	}
 	
 	@Override
-	public float getDestroySpeed (@NotNull ItemStack stack, IBlockState state) {
+	public float getDestroySpeed (@Nonnull ItemStack stack, IBlockState state) {
 		return ExtractorRecipe.extractStack.containsKey(state.getBlock()) ? creature_alchemy_extractor.getEfficiency() : super.getDestroySpeed(stack, state);
 	}
 	

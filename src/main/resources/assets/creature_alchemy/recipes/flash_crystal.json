@@ -14,12 +14,10 @@
 			"item": "minecraft:glowstone_dust"
 		},
 		"O": {
-			"item": "creature_alchemy:materials",
-			"data": 5
+			"item": "creature_alchemy:crystal"
 		}
 	},
 	"result": {
-		"item": "creature_alchemy:materials",
-		"data": 3
+		"item": "creature_alchemy:flash_crystal"
 	}
 }
