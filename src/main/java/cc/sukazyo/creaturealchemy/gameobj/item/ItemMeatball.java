@@ -11,7 +11,7 @@ public class ItemMeatball extends ItemFood {
 	public ItemMeatball () {
 		super(1, 0.4f, true);
 		this.setRegistryName(CreatureAlchemy.MODID, ID);
-		this.setTranslationKey(CreatureAlchemy.MODID + '.' + ID);
+		this.setUnlocalizedName(CreatureAlchemy.MODID + '.' + ID);
 		this.setCreativeTab(EventGameObjectRegister.itemTab);
 	}
 	

@@ -9,7 +9,7 @@ public class SimpleItem extends Item {
 	public SimpleItem (String registryName) {
 		
 		setRegistryName(registryName);
-		setTranslationKey(CreatureAlchemy.MODID + '.' + registryName);
+		setUnlocalizedName(CreatureAlchemy.MODID + '.' + registryName);
 		setCreativeTab(EventGameObjectRegister.itemTab);
 		
 	}

@@ -20,7 +20,7 @@ public class ItemExtractor extends ItemTool {
 		super(creature_alchemy_extractor, ExtractorRecipe.extractStack.keySet());
 		this.setRegistryName(CreatureAlchemy.MODID, ID);
 		this.setCreativeTab(EventGameObjectRegister.itemTab);
-		this.setTranslationKey(CreatureAlchemy.MODID + '.' + ID);
+		this.setUnlocalizedName(CreatureAlchemy.MODID + '.' + ID);
 	}
 	
 	@Override

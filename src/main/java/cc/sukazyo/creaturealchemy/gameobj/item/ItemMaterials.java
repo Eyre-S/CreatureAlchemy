@@ -55,7 +55,7 @@ public class ItemMaterials extends Item implements IMetasItem {
 	
 	@Override
 	@SuppressWarnings("all")
-	public String getTranslationKey(ItemStack stack) {
+	public String getUnlocalizedName(ItemStack stack) {
 		return "item." + CreatureAlchemy.MODID + "." + subtypes[stack.getMetadata()];
 	}
 	

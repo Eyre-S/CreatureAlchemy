@@ -29,7 +29,8 @@ public class EventGameObjectRegister {
 				CreatureAlchemyItems.PEARL,
 				CreatureAlchemyItems.PEARL_FRAGMENT,
 				CreatureAlchemyItems.TIDE_GRANULE,
-				CreatureAlchemyItems.TIDE_SLURRY
+				CreatureAlchemyItems.TIDE_SLURRY,
+				CreatureAlchemyItems.LAPIS_APPLE
 		);
 		registerItemsOreDictionary();
 	}

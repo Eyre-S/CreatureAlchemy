@@ -12,7 +12,7 @@ public class CACreativeTabs extends CreativeTabs {
 	
 	@Override
 	@SuppressWarnings("all")
-	public ItemStack createIcon() {
+	public ItemStack getTabIconItem() {
 		return new ItemStack(CreatureAlchemyItems.MEATBALL);
 	}
 	
