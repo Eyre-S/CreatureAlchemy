@@ -12,7 +12,10 @@ public class EventPlayerAction {
 	
 	@SubscribeEvent
 	public static void onHarvesting(BlockEvent.HarvestDropsEvent event) {
-		if (event.getHarvester().getHeldItemMainhand().getItem() == CreatureAlchemyItems.EXTRACTOR) {
+		if (
+				event.getHarvester() != null &&
+				event.getHarvester().getHeldItemMainhand().getItem() == CreatureAlchemyItems.EXTRACTOR
+		) {
 			ExtractorRecipe.extractAction(event);
 		}
 	}

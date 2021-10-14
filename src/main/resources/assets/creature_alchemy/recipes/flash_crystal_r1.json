@@ -1,10 +1,10 @@
 {
 	"type": "forge:ore_shaped",
-	"group": "creature_alchemy:flash_crystal",
+	"group": "creature_alchemy:flash_crystal_r1",
 	"pattern": [
-		"&:&",
-		":O:",
-		"&:&"
+		":&:",
+		"&O&",
+		":&:"
 	],
 	"key": {
 		"&": { "type": "forge:ore_dict", "ore": "dustRedstone" },

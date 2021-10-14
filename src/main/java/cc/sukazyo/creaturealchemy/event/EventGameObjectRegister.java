@@ -20,16 +20,16 @@ public class EventGameObjectRegister {
 		event.getRegistry().registerAll(
 				CreatureAlchemyItems.MEATBALL,
 				CreatureAlchemyItems.EXTRACTOR,
-				CreatureAlchemyItems.PRECISION_COMPONENT,
-				CreatureAlchemyItems.PRECISION_UNIT,
+				CreatureAlchemyItems.WOODEN_CHIP,
+				CreatureAlchemyItems.EXTRACTOR_HEAD,
 				CreatureAlchemyItems.PEBBLE,
 				CreatureAlchemyItems.FLASH_CRYSTAL,
 				CreatureAlchemyItems.MYSTERIOUS_COTTON,
 				CreatureAlchemyItems.CRYSTAL,
-				CreatureAlchemyItems.PEARL,
-				CreatureAlchemyItems.PEARL_FRAGMENT,
-				CreatureAlchemyItems.TIDE_GRANULE,
-				CreatureAlchemyItems.TIDE_SLURRY,
+//				CreatureAlchemyItems.PEARL,
+//				CreatureAlchemyItems.PEARL_FRAGMENT,
+//				CreatureAlchemyItems.TIDE_GRANULE,
+//				CreatureAlchemyItems.TIDE_SLURRY,
 				CreatureAlchemyItems.LAPIS_APPLE
 		);
 		registerItemsOreDictionary();

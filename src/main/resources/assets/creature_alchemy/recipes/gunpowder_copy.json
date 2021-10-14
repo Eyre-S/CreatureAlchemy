@@ -1,13 +1,13 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "forge:ore_shapeless",
 	"group": "creature_alchemy:gunpowder_copy",
 	"result": { "item": "minecraft:gunpowder", "count": 5 },
 	"ingredients": [
-		{ "item": "minecraft:gunpowder" },
-		{ "item": "minecraft:glowstone_dust" },
-		{ "item": "minecraft:glowstone_dust" },
-		{ "item": "minecraft:redstone" },
-		{ "item": "minecraft:redstone" },
-		{ "item": "minecraft:redstone" }
+		{ "type": "forge:ore_dict", "ore": "gunpowder" },
+		{ "type": "forge:ore_dict", "ore": "dustGlowstone" },
+		{ "type": "forge:ore_dict", "ore": "dustGlowstone" },
+		{ "type": "forge:ore_dict", "ore": "dustRedstone" },
+		{ "type": "forge:ore_dict", "ore": "dustRedstone" },
+		{ "type": "forge:ore_dict", "ore": "dustRedstone" }
 	]
 }

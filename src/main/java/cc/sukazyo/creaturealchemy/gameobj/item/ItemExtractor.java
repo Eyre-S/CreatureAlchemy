@@ -14,7 +14,7 @@ public class ItemExtractor extends ItemTool {
 	
 	public static final String ID = "extractor";
 	
-	private static final ToolMaterial creature_alchemy_extractor = EnumHelper.addToolMaterial("entity_alchemy_extractor", 2, 80, 5.0f, 1.5f, 1);
+	private static final ToolMaterial creature_alchemy_extractor = EnumHelper.addToolMaterial("creature_alchemy_extractor", 2, 80, 5.0f, 1.5f, 1);
 	
 	public ItemExtractor () {
 		super(creature_alchemy_extractor, ExtractorRecipe.extractStack.keySet());

@@ -1,17 +1,13 @@
 {
-	"type": "minecraft:crafting_shaped",
+	"type": "forge:ore_shaped",
 	"group": "creature_alchemy:blaze_powder_make",
 	"pattern": [
 		":V:",
 		":V:"
 	],
 	"key": {
-		":": {
-			"item": "minecraft:glowstone_dust"
-		},
-		"V": {
-			"item": "minecraft:lava_bucket"
-		}
+		":": { "type": "forge:ore_dict", "ore": "dustGlowstone" },
+		"V": { "item": "minecraft:lava_bucket" }
 	},
 	"result": {
 		"item": "minecraft:blaze_powder",

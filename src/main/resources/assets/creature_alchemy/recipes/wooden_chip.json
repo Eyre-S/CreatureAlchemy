@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:crafting_shaped",
-	"group": "creature_alchemy:precision_component",
+	"group": "creature_alchemy:wooden_chip",
 	"pattern": [
 		"`|`"
 	],
@@ -13,6 +13,6 @@
 		}
 	},
 	"result": {
-		"item": "creature_alchemy:precision_component"
+		"item": "creature_alchemy:wooden_chip"
 	}
 }

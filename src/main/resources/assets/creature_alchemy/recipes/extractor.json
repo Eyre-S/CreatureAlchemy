@@ -1,5 +1,5 @@
 {
-	"type": "minecraft:crafting_shaped",
+	"type": "forge:ore_shaped",
 	"group": "creature_alchemy:flash_crystal",
 	"pattern": [
 		"#@#",
@@ -7,19 +7,10 @@
 		" | "
 	],
 	"key": {
-		"|": {
-			"item": "minecraft:stick"
-		},
-		"#": {
-			"item": "minecraft:planks",
-			"data": 32767
-		},
-		"@": {
-			"item": "creature_alchemy:precision_unit"
-		},
-		"^": {
-			"item": "creature_alchemy:precision_component"
-		}
+		"|": { "type": "forge:ore_dict", "ore": "stickWood" },
+		"#": { "type": "forge:ore_dict", "ore": "plankWood" },
+		"@": { "item": "creature_alchemy:extractor_head" },
+		"^": { "item": "creature_alchemy:wooden_chip" }
 	},
 	"result": {
 		"item": "creature_alchemy:extractor"

@@ -1,9 +1,9 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "forge:ore_shapeless",
 	"group": "creature_alchemy:ender_pearl_make",
 	"result": { "item": "minecraft:ender_pearl" },
 	"ingredients": [
-		{ "item": "creature_alchemy:pebble" },
+		{ "type": "forge:ore_dict", "ore": "pebble" },
 		{ "item": "minecraft:water_bucket" },
 		{ "item": "minecraft:lava_bucket" }
 	]

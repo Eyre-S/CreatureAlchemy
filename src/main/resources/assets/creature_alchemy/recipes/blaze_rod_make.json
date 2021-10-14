@@ -1,5 +1,5 @@
 {
-	"type": "minecraft:crafting_shaped",
+	"type": "forge:ore_shaped",
 	"group": "creature_alchemy:blaze_rod_make",
 	"pattern": [
 		"` ",
@@ -7,12 +7,8 @@
 		"`#"
 	],
 	"key": {
-		"`": {
-			"item": "minecraft:blaze_powder"
-		},
-		"#": {
-			"item": "minecraft:obsidian"
-		}
+		"`": { "item": "minecraft:blaze_powder" },
+		"#": { "type": "forge:ore_dict", "ore": "obsidian" }
 	},
 	"result": {
 		"item": "minecraft:blaze_rod"

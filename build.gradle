@@ -14,7 +14,17 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "0.1"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType(Javadoc) {
+    options.encoding = 'UTF-8'
+    options.docEncoding = 'UTF-8'
+    options.charSet = 'UTF-8'
+}
+
+version = "0.1.1"
 group = "cc.sukazyo.creaturealchemy" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "creature_alchemy"
 

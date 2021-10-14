@@ -1,0 +1,9 @@
+- lapis_apple
+  - 合成表
+  - 药水效果
+- wooden_barrel_rice
+  - 完整实现
+- wooden_chip
+  - 可用的oreDict
+    - pinWood
+    - blotWood

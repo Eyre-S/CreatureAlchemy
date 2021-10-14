@@ -1,7 +1,7 @@
 itemGroup.creature_alchemy=生灵炼金术
 
-item.creature_alchemy.precision_component.name=精密零件
-item.creature_alchemy.precision_unit.name=精密组件
+item.creature_alchemy.wooden_chip.name=木元件
+item.creature_alchemy.extractor_head.name=解构头
 item.creature_alchemy.pebble.name=小石子
 item.creature_alchemy.flash_crystal.name=光晶体
 item.creature_alchemy.mysterious_cotton.name=神秘棉
@@ -10,3 +10,7 @@ item.creature_alchemy.crystal.name=水晶
 item.creature_alchemy.meatball.name=肉团
 
 item.creature_alchemy.extractor.name=解构器
+
+# It's one of a friend's name, it have no necessary to translated.
+item.creature_alchemy.lapis_apple.name=§9\§bL§eapi§bs§e_A§bp§eple§9/§r
+item.creature_alchemy.lapis_apple.description_1=足够多的附魔青金石
