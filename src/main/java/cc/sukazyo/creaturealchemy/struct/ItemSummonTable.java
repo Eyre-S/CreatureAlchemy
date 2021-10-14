@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class ItemSummonTable {
 	
 	private final List<ItemSummonStack> table;

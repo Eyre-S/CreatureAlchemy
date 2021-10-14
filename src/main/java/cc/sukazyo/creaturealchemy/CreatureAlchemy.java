@@ -1,6 +1,6 @@
 package cc.sukazyo.creaturealchemy;
 
-import cc.sukazyo.creaturealchemy.event.EventRecipeRegistry;
+import cc.sukazyo.creaturealchemy.api.event.RegistryEventHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
-		EventRecipeRegistry.registerCreatureAlchemyExtractorRecipe(event);
+		RegistryEventHandler.pushFMLInitEvents(event);
 	}
 	
 }

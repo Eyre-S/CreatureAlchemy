@@ -2,7 +2,7 @@ package cc.sukazyo.creaturealchemy.gameobj.item;
 
 import cc.sukazyo.creaturealchemy.CreatureAlchemy;
 import cc.sukazyo.creaturealchemy.event.EventGameObjectRegister;
-import cc.sukazyo.creaturealchemy.logic.recipe.ExtractorRecipe;
+import cc.sukazyo.creaturealchemy.api.recipe.ExtractorRecipe;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;

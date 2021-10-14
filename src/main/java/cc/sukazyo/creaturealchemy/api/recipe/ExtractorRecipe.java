@@ -1,4 +1,4 @@
-package cc.sukazyo.creaturealchemy.logic.recipe;
+package cc.sukazyo.creaturealchemy.api.recipe;
 
 import cc.sukazyo.creaturealchemy.struct.ItemSummonTable;
 import net.minecraft.block.Block;
@@ -14,6 +14,13 @@ public class ExtractorRecipe {
 	
 	public static final Map<Block, ItemSummonTable> extractStack = new HashMap<>();
 	
+	/**
+	 * Register a recipe to extractor harvesting.
+	 *
+	 * Recommended register at {@link net.minecraftforge.fml.common.event.FMLInitializationEvent}
+	 * @param target The block harvested by extractor.
+	 * @param drops The drop table.
+	 */
 	public static void addRecipe (Block target, ItemSummonTable drops) {
 		extractStack.put(target, drops);
 	}
