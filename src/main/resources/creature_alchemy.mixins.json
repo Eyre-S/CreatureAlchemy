@@ -1,0 +1,10 @@
+{
+	"required": true,
+	"package": "cc.sukazyo.creature_alchemy.mixins",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
