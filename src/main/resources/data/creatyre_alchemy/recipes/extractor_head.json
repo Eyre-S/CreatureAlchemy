@@ -1,13 +1,14 @@
 {
-	"type": "forge:ore_shaped",
-	"group": "creature_alchemy:precision_unit",
+	"type": "minecraft:crafting_shaped",
+	"group": "creature_alchemy:extractor_head",
+	"category": "equipment",
 	"pattern": [
 		" - ",
 		"^|`"
 	],
 	"key": {
-		"|": { "type": "forge:ore_dict", "ore": "stickWood" },
-		"`": { "item": "minecraft:wooden_button" },
+		"|": { "item": "minecraft:stick" },
+		"`": { "tag": "minecraft:wooden_buttons" },
 		"-": { "item": "minecraft:heavy_weighted_pressure_plate" },
 		"^": { "item": "creature_alchemy:wooden_chip" }
 	},

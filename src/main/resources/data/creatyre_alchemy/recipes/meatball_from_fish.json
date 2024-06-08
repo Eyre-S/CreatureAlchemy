@@ -1,8 +1,9 @@
 {
 	"type": "minecraft:crafting_shapeless",
-	"group": "creature_alchemy:meatball_from_mutton",
+	"group": "creature_alchemy:meatball_from_meat",
+	"category": "misc",
 	"result": { "item": "creature_alchemy:meatball", "count": 2 },
 	"ingredients": [
-		{ "item": "minecraft:mutton" }
+		{ "item": "minecraft:cod" }
 	]
 }

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "creature_alchemy:gunpowder_copy",
+	"category": "misc",
+	"result": { "item": "minecraft:gunpowder", "count": 8 },
+	"ingredients": [
+		{ "item": "minecraft:gunpowder" },
+		{ "item": "minecraft:glowstone_dust" },
+		{ "item": "minecraft:glowstone_dust" },
+		{ "item": "minecraft:redstone" },
+		{ "item": "minecraft:redstone" },
+		{ "item": "minecraft:redstone" }
+	]
+}

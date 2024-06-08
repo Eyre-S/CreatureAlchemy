@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "creature_alchemy:flash_crystal",
+	"category": "misc",
+	"pattern": [
+		":&:",
+		"&O&",
+		":&:"
+	],
+	"key": {
+		"&": { "item": "minecraft:redstone" },
+		":": { "item": "minecraft:glowstone_dust" },
+		"O": { "item": "creature_alchemy:crystal" }
+	},
+	"result": {
+		"item": "creature_alchemy:flash_crystal"
+	}
+}

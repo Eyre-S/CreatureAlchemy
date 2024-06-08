@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"group": "creature_alchemy:wooden_chip",
+	"category": "equipment",
 	"pattern": [
 		"`|`"
 	],
@@ -9,7 +10,7 @@
 			"item": "minecraft:stick"
 		},
 		"`": {
-			"item": "minecraft:wooden_button"
+			"tag": "minecraft:wooden_buttons"
 		}
 	},
 	"result": {

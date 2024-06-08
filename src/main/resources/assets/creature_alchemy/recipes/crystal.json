@@ -1,9 +1,0 @@
-{
-	"type": "forge:ore_shapeless",
-	"group": "creature_alchemy:crystal",
-	"result": { "item": "creature_alchemy:crystal" },
-	"ingredients": [
-		{ "type": "forge:ore_dict", "ore": "gemDiamond" },
-		{ "type": "forge:ore_dict", "ore": "gemEmerald" }
-	]
-}

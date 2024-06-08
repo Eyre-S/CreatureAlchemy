@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"group": "creature_alchemy:rotten_flesh_copy",
+	"category": "misc",
 	"pattern": [
 		"+++",
 		"+*+",
