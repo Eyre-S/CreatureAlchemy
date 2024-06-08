@@ -1,0 +1,19 @@
+{
+	"type": "forge:ore_shaped",
+	"group": "creature_alchemy:flash_crystal",
+	"pattern": [
+		"#@#",
+		"#^#",
+		" | "
+	],
+	"key": {
+		"|": { "type": "forge:ore_dict", "ore": "stickWood" },
+		"#": { "type": "forge:ore_dict", "ore": "plankWood" },
+		"@": { "item": "creature_alchemy:extractor_head" },
+		"^": { "item": "creature_alchemy:wooden_chip" }
+	},
+	"result": {
+		"item": "creature_alchemy:extractor"
+	}
+	
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "creature_alchemy:rotten_flesh_copy",
+	"pattern": [
+		"+++",
+		"+*+",
+		"+++"
+	],
+	"key": {
+		"+": {
+			"item": "creature_alchemy:meatball"
+		},
+		"*": {
+			"item": "minecraft:rotten_flesh"
+		}
+	},
+	"result": {
+		"item": "minecraft:rotten_flesh",
+		"count": 9
+	}
+}

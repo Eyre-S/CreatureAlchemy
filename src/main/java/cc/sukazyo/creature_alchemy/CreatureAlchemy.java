@@ -1,5 +1,7 @@
 package cc.sukazyo.creature_alchemy;
 
+import cc.sukazyo.creature_alchemy.item_groups.CreatureAlchemyItemGroups;
+import cc.sukazyo.creature_alchemy.items.CreatureAlchemyItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
@@ -28,6 +30,9 @@ public class CreatureAlchemy implements ModInitializer {
 						.toString();
 		
 		logger.info("Hello, Creature Alchemy!");
+		
+		CreatureAlchemyItems.onInitialize();
+		CreatureAlchemyItemGroups.onInitialize();
 		
 	}
 	
