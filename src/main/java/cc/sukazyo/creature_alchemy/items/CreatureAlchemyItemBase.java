@@ -12,9 +12,13 @@ public class CreatureAlchemyItemBase extends Item {
 	
 	public final Identifier identifier;
 	
-	public CreatureAlchemyItemBase (String id) {
-		super(new FabricItemSettings());
+	public CreatureAlchemyItemBase (String id, FabricItemSettings settings) {
+		super(settings);
 		this.identifier = new Identifier(CreatureAlchemy.MOD_ID, id);
+	}
+	
+	public CreatureAlchemyItemBase (String id) {
+		this(id, new FabricItemSettings());
 	}
 	
 	CreatureAlchemyItemBase registerThis () {

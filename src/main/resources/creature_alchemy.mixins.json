@@ -3,6 +3,7 @@
 	"package": "cc.sukazyo.creature_alchemy.mixins",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"MixinAbstractBlock"
 	],
 	"injectors": {
 		"defaultRequire": 1

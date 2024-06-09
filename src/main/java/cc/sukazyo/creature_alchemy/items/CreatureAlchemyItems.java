@@ -1,9 +1,22 @@
 package cc.sukazyo.creature_alchemy.items;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.FoodComponent;
+
 public class CreatureAlchemyItems {
 	
 	public static final CreatureAlchemyItemBase MEATBALL =
-			new CreatureAlchemyItemBase("meatball").registerThis();
+			new CreatureAlchemyItemBase(
+					"meatball",
+					new FabricItemSettings()
+							.food(new FoodComponent.Builder()
+									.meat()
+									.snack()
+									.hunger(1)
+									.saturationModifier(0.4f)
+									.build()
+							)
+			).registerThis();
 	public static final CreatureAlchemyItemBase PEBBLE =
 			new CreatureAlchemyItemBase("pebble").registerThis();
 	public static final CreatureAlchemyItemBase CRYSTAL =
@@ -17,7 +30,7 @@ public class CreatureAlchemyItems {
 	public static final CreatureAlchemyItemBase EXTRACTOR_HEAD =
 			new CreatureAlchemyItemBase("extractor_head").registerThis();
 	public static final CreatureAlchemyItemBase EXTRACTOR =
-			new CreatureAlchemyItemBase("extractor").registerThis();
+			new ItemExtractor("extractor").registerThis();
 	public static final CreatureAlchemyItemBase LAPIS_APPLE =
 			new ItemLapisApple("lapis_apple").registerThis();
 	
