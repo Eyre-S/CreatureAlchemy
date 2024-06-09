@@ -30,4 +30,12 @@ public class ExtractorRecipe {
 		return dropsSupplier.get();
 	}
 	
+	@Override
+	public String toString () {
+		return String.format(
+				"{blocks: [%s]}",
+				blocks
+		);
+	}
+	
 }

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class CreatureAlchemyItemGroupBuilder {
 	
@@ -31,8 +32,10 @@ public class CreatureAlchemyItemGroupBuilder {
 	}
 	
 	public void registerItem (Item... item) {
+		List<Item> li = List.of(item);
+		li.forEach(x -> CreatureAlchemy.logger.debug("new item registered to item group {} : {}", this.id, x));
 		items.addAll(
-				Arrays.stream(item).map(ItemStack::new).toList()
+				li.stream().map(ItemStack::new).toList()
 		);
 	}
 	
@@ -45,7 +48,12 @@ public class CreatureAlchemyItemGroupBuilder {
 	}
 	
 	public ItemGroup register () {
-		return Registry.register(Registries.ITEM_GROUP, this.id, this.build());
+		try {
+			return Registry.register(Registries.ITEM_GROUP, this.id, this.build());
+		} finally {
+			CreatureAlchemy.logger.debug("registered item group %s.".formatted(this.id));
+		}
+		
 	}
 	
 }

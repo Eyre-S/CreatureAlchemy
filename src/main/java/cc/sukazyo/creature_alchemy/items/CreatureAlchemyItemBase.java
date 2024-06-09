@@ -22,8 +22,10 @@ public class CreatureAlchemyItemBase extends Item {
 	}
 	
 	CreatureAlchemyItemBase registerThis () {
-		CreatureAlchemyItemGroups.creature_alchemy.registerItem(this);
-		return Registry.register(Registries.ITEM, identifier, this);
+		CreatureAlchemyItemBase _this = Registry.register(Registries.ITEM, identifier, this);
+		CreatureAlchemyItemGroups.creature_alchemy.registerItem(_this);
+		CreatureAlchemy.logger.debug("registered Creature Alchemy item {}", _this);
+		return _this;
 	}
 	
 }

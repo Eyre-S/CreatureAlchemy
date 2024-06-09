@@ -1,5 +1,6 @@
 package cc.sukazyo.creature_alchemy.item_groups;
 
+import cc.sukazyo.creature_alchemy.CreatureAlchemy;
 import cc.sukazyo.creature_alchemy.items.CreatureAlchemyItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,7 @@ public class CreatureAlchemyItemGroups {
 	public static ItemGroup CREATURE_ALCHEMY;
 	
 	public static void onInitialize () {
+		CreatureAlchemy.logger.debug("Initializing Creature Alchemy item groups");
 		CREATURE_ALCHEMY = creature_alchemy.register();
 	}
 	

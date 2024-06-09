@@ -1,5 +1,6 @@
 package cc.sukazyo.creature_alchemy.events;
 
+import cc.sukazyo.creature_alchemy.CreatureAlchemy;
 import cc.sukazyo.creature_alchemy.events.api.block.BlockGetDroppedStacksCallback;
 import cc.sukazyo.creature_alchemy.events.api.init.ModInitializeCallback;
 import cc.sukazyo.creature_alchemy.items.CreatureAlchemyItems;
@@ -24,6 +25,7 @@ public class ExtractorsHandler implements
 	
 	@Override
 	public void onInitialize () {
+		
 		ExtractorRecipes.register(
 				new ExtractorRecipe(
 						List.of(
@@ -51,6 +53,8 @@ public class ExtractorsHandler implements
 						0.1f
 				)
 		);
+		CreatureAlchemy.logger.debug("registered all extractor recipes.");
+		
 	}
 	
 	@Override

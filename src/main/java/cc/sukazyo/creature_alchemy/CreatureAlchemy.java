@@ -31,11 +31,17 @@ public class CreatureAlchemy implements ModInitializer {
 						.toString();
 		
 		logger.info("Hello, Creature Alchemy!");
+		logger.debug("""
+				You are seeing the debug message from mod Creature Alchemy!
+				  Indicates that you enabled debugging log output from the mod.
+				  Have fun with modding Creature Alchemy ~""");
 		
 		CreatureAlchemyItems.onInitialize();
 		CreatureAlchemyItemGroups.onInitialize();
 		
+		logger.debug("Running all Creature Alchemy events listener initialization.");
 		CreatureAlchemyEvents.onInitialize();
+		logger.debug("Done all Creature Alchemy events listener initialization.");
 		
 	}
 	
